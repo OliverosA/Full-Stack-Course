@@ -11,12 +11,21 @@ For example:
 
 You can assume, for the purpose of this kata, that the supplied array will not be empty.
 
-## `My Solution`
+## `My Solutions`
 ```JavaScript
+
+//Option 1
 class SmallestIntegerFinder {
     findSmallestInt(args) {
         return args.reduce(
         ( prev, curr ) => Math.min( prev, curr ));
     }
+}
+
+//Option 2
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
 }
 ```
