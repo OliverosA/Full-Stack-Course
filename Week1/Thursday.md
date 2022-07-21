@@ -14,18 +14,25 @@ If the input array is empty consider it as: [0] (array with a zero).
 
 ## `My Solutions`
 ```JavaScript
+/* OPTION 1 */
 function oddOrEven(array) {
-  if( array.length === 0 ) return 'even';
+  if( array.length === 0 ) return 'even'; // checking the array length
   
-   const result = array.reduce((prev, curr ) => prev + curr );
+   const result = array.reduce((prev, curr ) => prev + curr ); // getting the sum of all the elements in the array
   
-  return result % 2 === 0 ? 'even' : 'odd'
-}
-```
+  return result % 2 === 0 ? 'even' : 'odd'; // checking if the result is even or odd
 
-```JavaScript
+
+/* OPTION 2 */
 function oddOrEven(array) {
-  const result = array.reduce((prev, curr ) => prev + curr, 0 );
-  return result % 2 === 0 ? 'even' : 'odd'
+  const result = array.reduce((prev, curr ) => prev + curr, 0 ); // getting the sum of all the elements in the array
+  return result % 2 === 0 ? 'even' : 'odd'; // checking if the result is even or odd
 }
+
+
+/* OPTION 3*/
+function oddOrEven(array) {  //getting the sum of all the elements in the array and checking if the result is even or odd
+  return array.reduce((prev, curr ) => prev + curr, 0 ) % 2 === 0 ? 'even' : 'odd';
+}
+
 ```
