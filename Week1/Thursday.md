@@ -21,7 +21,7 @@ function oddOrEven(array) {
    const result = array.reduce((prev, curr ) => prev + curr ); // getting the sum of all the elements in the array
   
   return result % 2 === 0 ? 'even' : 'odd'; // checking if the result is even or odd
-
+}
 
 /* OPTION 2 */
 function oddOrEven(array) {
