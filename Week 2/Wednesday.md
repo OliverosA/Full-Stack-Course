@@ -19,7 +19,7 @@ In your render you should return:
 ## `Solution #1`
 
 ```JavaScript
-import React, {useState} from 'react';
+import React from 'react';
 
 export class Counter extends React.Component {
   constructor(props) {
