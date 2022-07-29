@@ -176,6 +176,7 @@ class WishlistForm extends React.Component {
             value={this.state.priority}
             onChange={this.handlePriorityInput}
           >
+            {/*Using map to get array values*/}
             {priorityList.map((value) => (
               <option value={value} id={value} key={value}>
                 {value}
